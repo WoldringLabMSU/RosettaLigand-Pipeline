@@ -17,13 +17,13 @@ You should also be familiar with the [HPCC OnDemand interface](https://ondemand.
 ## Installing Rosetta and the Workflow Directory Structure
 Once you have an HPCC account, you can copy Rosetta and all the necessary directories and files directly from my home directory (/mnt/home/belecciu). If you already have Rosetta in your home directory and would like to use that installation in the workflow instead, feel free to skip to the next section.
 
-1.	To install Rosetta and all the necessary files in your home directory, you should run the SLURM job file [`cp_job.sb`](https://github.com/WoldringLabMSU/BINDSMART/blob/main/RosettaLigand-Pipeline/Code/cp_job.sb)
+1.	To install Rosetta and all the necessary files in your home directory, you should run the SLURM job file [`cp_job.sb`](https://github.com/WoldringLabMSU/RosettaLigand-Pipeline/blob/main/Code/cp_job.sb)
 2.	&#9888; <b>Important!</b> Before running this SLURM job file, make the following change to it: replace the ‘aljetsal’ with the name of your HPCC home directory (generally your MSU NetID).
 3.	Place this SLURM file in your home directory using HPCC OnDemand. Run it by typing `sbatch cp_job.sb`.
 4.	This will take take approximately 40 minutes to run, as you are transferring a large directory (~36G). You can check the progress of your job by typing `qs` in the command prompt. If no job ID and time appear, the transfer has completed.
 5.	You should now see a directory called streamlined_docking in your home directory if you type `ls`. 
 
-<i>NOTE: If you already had Rosetta installed in your home directory, there is no need to copy it from my directory. You can copy the entire directory structure and workflow without Rosetta by making the changes to the [`cp_job.sb`](https://github.com/WoldringLabMSU/BINDSMART/blob/main/RosettaLigand-Pipeline/Code/cp_job.sb) SLURM job to match the code in the below figure. </i>
+<i>NOTE: If you already had Rosetta installed in your home directory, there is no need to copy it from my directory. You can copy the entire directory structure and workflow without Rosetta by making the changes to the [`cp_job.sb`](https://github.com/WoldringLabMSU/RosettaLigand-Pipeline/blob/main/Code/cp_job.sb) SLURM job to match the code in the below figure. </i>
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9e5470f0-679f-45c8-829b-cea13c549976" width="500">
 </p>
