@@ -1,4 +1,4 @@
-The main source for protein PDB files is the Protein Data Bank. However, most protein files sourced from here are not “clean” and therefore not immediately suitable for protein-ligand docking. To clean these proteins, you can use PyMOL. Instructions for cleaning protein files with PyMOL are provided next in steps 6-10.
+The main source for protein PDB files is the Protein Data Bank. However, most protein files sourced from here are not “clean” and therefore not immediately suitable for protein-ligand docking. To clean these proteins, you can use PyMOL. Instructions for cleaning protein files with PyMOL are provided here:
 1. Once you download the protein file from the PDB, open it in PyMOL.
 2. Next to the protein name, click on ‘A’ and then click on ‘remove waters’ to get rid of any water molecules present.
 ![image](https://github.com/user-attachments/assets/bd01aa6f-d759-40b2-97c3-3203115e5c62)
